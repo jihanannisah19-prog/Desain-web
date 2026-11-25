@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TokoKu - Katalog Produk</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+  <!-- Header / Navbar -->
+  <header class="bg-white shadow sticky top-0 z-10">
+    <nav class="container mx-auto flex justify-between items-center px-6 py-4">
+      <h1 class="text-2xl font-bold text-blue-600">TokoKu</h1>
+      <div class="flex gap-6 text-sm font-medium">
+        <a href="#" class="text-gray-700 hover:text-blue-600">Home</a>
+        <a href="#produk" class="text-gray-700 hover:text-blue-600">Produk</a>
+        <a href="#kontak" class="text-gray-700 hover:text-blue-600">Kontak</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="bg-gradient-to-r from-blue-600 to-indigo-600 text-white">
+    <div class="container mx-auto px-6 py-16 text-center">
+      <h2 class="text-3xl md:text-5xl font-bold mb-4">Katalog Produk Pilihan</h2>
+      <p class="text-blue-100 text-lg mb-6">Temukan produk berkualitas dengan harga terbaik untuk kebutuhan Anda.</p>
+      <a href="#produk" class="inline-block bg-white text-blue-600 font-semibold px-6 py-3 rounded-full shadow-lg hover:bg-blue-50 hover:scale-105 transition">
+        Lihat Produk
+      </a>
+    </div>
+  </section>
+
+  <!-- Konten Produk -->
+  <main id="produk" class="container mx-auto px-6 py-12">
+    <h2 class="text-2xl md:text-3xl font-bold text-gray-800 mb-2">Produk Kami</h2>
+    <p class="text-gray-500 mb-8">Pilih produk favorit Anda dari katalog di bawah ini.</p>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+      <!-- Produk 1 -->
+      <div class="bg-white rounded-2xl shadow-md hover:shadow-xl hover:-translate-y-1 transition p-6">
+        <div class="h-40 rounded-xl bg-blue-100 flex items-center justify-center text-6xl mb-4">👟</div>
+        <span class="inline-block bg-green-100 text-green-700 text-xs font-semibold px-3 py-1 rounded-full mb-2">Terlaris</span>
+        <h3 class="text-lg font-bold mb-1">Sepatu Sneakers</h3>
+        <p class="text-gray-600 text-sm mb-3">Sepatu santai nyaman dipakai sehari-hari dengan desain modern.</p>
+        <p class="text-xl font-bold text-blue-600 mb-4">Rp 299.000</p>
+        <button class="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold px-4 py-2 rounded-lg transition">Beli Sekarang</button>
+      </div>
+
+      <!-- Produk 2 -->
+      <div class="bg-white rounded-2xl shadow-md hover:shadow-xl hover:-translate-y-1 transition p-6">
+        <div class="h-40 rounded-xl bg-yellow-100 flex items-center justify-center text-6xl mb-4">🎒</div>
+        <span class="inline-block bg-red-100 text-red-700 text-xs font-semibold px-3 py-1 rounded-full mb-2">Diskon 20%</span>
+        <h3 class="text-lg font-bold mb-1">Tas Ransel</h3>
+        <p class="text-gray-600 text-sm mb-3">Tas ransel tahan air dengan banyak ruang untuk laptop dan buku.</p>
+        <p class="text-xl font-bold text-blue-600 mb-4">Rp 189.000</p>
+        <button class="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold px-4 py-2 rounded-lg transition">Beli Sekarang</button>
+      </div>
+
+      <!-- Produk 3 -->
+      <div class="bg-white rounded-2xl shadow-md hover:shadow-xl hover:-translate-y-1 transition p-6">
+        <div class="h-40 rounded-xl bg-purple-100 flex items-center justify-center text-6xl mb-4">🎧</div>
+        <span class="inline-block bg-blue-100 text-blue-700 text-xs font-semibold px-3 py-1 rounded-full mb-2">Baru</span>
+        <h3 class="text-lg font-bold mb-1">Headphone Wireless</h3>
+        <p class="text-gray-600 text-sm mb-3">Suara jernih dengan koneksi bluetooth dan baterai tahan lama.</p>
+        <p class="text-xl font-bold text-blue-600 mb-4">Rp 349.000</p>
+        <button class="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold px-4 py-2 rounded-lg transition">Beli Sekarang</button>
+      </div>
+
+      <!-- Produk 4 -->
+      <div class="bg-white rounded-2xl shadow-md hover:shadow-xl hover:-translate-y-1 transition p-6">
+        <div class="h-40 rounded-xl bg-pink-100 flex items-center justify-center text-6xl mb-4">⌚</div>
+        <span class="inline-block bg-green-100 text-green-700 text-xs font-semibold px-3 py-1 rounded-full mb-2">Terlaris</span>
+        <h3 class="text-lg font-bold mb-1">Jam Tangan Digital</h3>
+        <p class="text-gray-600 text-sm mb-3">Jam tangan sporty dengan fitur stopwatch dan tahan percikan air.</p>
+        <p class="text-xl font-bold text-blue-600 mb-4">Rp 225.000</p>
+        <button class="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold px-4 py-2 rounded-lg transition">Beli Sekarang</button>
+      </div>
+
+      <!-- Produk 5 -->
+      <div class="bg-white rounded-2xl shadow-md hover:shadow-xl hover:-translate-y-1 transition p-6">
+        <div class="h-40 rounded-xl bg-green-100 flex items-center justify-center text-6xl mb-4">🧢</div>
+        <span class="inline-block bg-blue-100 text-blue-700 text-xs font-semibold px-3 py-1 rounded-full mb-2">Baru</span>
+        <h3 class="text-lg font-bold mb-1">Topi Casual</h3>
+        <p class="text-gray-600 text-sm mb-3">Topi berbahan katun adem, cocok untuk gaya santai.</p>
+        <p class="text-xl font-bold text-blue-600 mb-4">Rp 79.000</p>
+        <button class="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold px-4 py-2 rounded-lg transition">Beli Sekarang</button>
+      </div>
+
+      <!-- Produk 6 -->
+      <div class="bg-white rounded-2xl shadow-md hover:shadow-xl hover:-translate-y-1 transition p-6">
+        <div class="h-40 rounded-xl bg-orange-100 flex items-center justify-center text-6xl mb-4">🕶️</div>
+        <span class="inline-block bg-red-100 text-red-700 text-xs font-semibold px-3 py-1 rounded-full mb-2">Diskon 15%</span>
+        <h3 class="text-lg font-bold mb-1">Kacamata Hitam</h3>
+        <p class="text-gray-600 text-sm mb-3">Kacamata dengan lensa anti-UV untuk melindungi mata Anda.</p>
+        <p class="text-xl font-bold text-blue-600 mb-4">Rp 120.000</p>
+        <button class="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold px-4 py-2 rounded-lg transition">Beli Sekarang</button>
+      </div>
+
+    </div>
+
+    <!-- Form Kontak -->
+    <section id="kontak" class="mt-16 max-w-md mx-auto">
+      <div class="bg-white rounded-2xl shadow-md p-6">
+        <h3 class="text-xl font-bold mb-4 text-center">Hubungi Kami</h3>
+        <form onsubmit="event.preventDefault(); alert('Terima kasih, pesan Anda terkirim!'); this.reset();">
+          <input type="text" placeholder="Nama" required
+            class="w-full border border-gray-300 rounded-lg px-4 py-2 mb-3 focus:outline-none focus:ring-2 focus:ring-blue-500">
+          <input type="email" placeholder="Email" required
+            class="w-full border border-gray-300 rounded-lg px-4 py-2 mb-3 focus:outline-none focus:ring-2 focus:ring-blue-500">
+          <button type="submit"
+            class="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold px-4 py-2 rounded-lg transition">Kirim</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="text-center text-gray-500 py-6 border-t">
+    &copy; 2026 TokoKu - Praktikum Desain Web
+  </footer>
+
+</body>
+</html>

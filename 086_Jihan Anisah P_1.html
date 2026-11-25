@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Registrasi</title>
+    <style>
+        body { font-family: Arial, sans-serif; font-size: 13px; }
+        h2 { text-align: center; }
+        table { margin: 0 auto; }
+        td { padding: 4px 6px; vertical-align: top; }
+        .pesan { color: red; font-size: 11px; display: block; }
+    </style>
+</head>
+<body>
+    <h2>FORM REGISTRASI</h2>
+
+    <form id="formReg" action="" method="post" novalidate>
+        <table>
+            <tr>
+                <td>Nama</td>
+                <td>
+                    <input type="text" id="nama" name="nama" placeholder="Masukkan Nama">
+                    <span class="pesan" id="err-nama"></span>
+                </td>
+            </tr>
+            <tr>
+                <td>Alamat</td>
+                <td>
+                    <textarea id="alamat" name="alamat" rows="3" cols="22" placeholder="Masukkan Alamat"></textarea>
+                    <span class="pesan" id="err-alamat"></span>
+                </td>
+            </tr>
+            <tr>
+                <td>Tanggal Lahir</td>
+                <td>
+                    <input type="date" id="tgl" name="tgl">
+                    <span class="pesan" id="err-tgl"></span>
+                </td>
+            </tr>
+            <tr>
+                <td>Telepon</td>
+                <td>
+                    <input type="text" id="telp" name="telp" placeholder="Masukkan No. Tlp">
+                    <span class="pesan" id="err-telp"></span>
+                </td>
+            </tr>
+            <tr>
+                <td>URL</td>
+                <td>
+                    <input type="text" id="url" name="url" placeholder="Masukkan alamat Web">
+                    <span class="pesan" id="err-url"></span>
+                </td>
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td>
+                    <input type="text" id="email" name="email" placeholder="Masukkan Email">
+                    <span class="pesan" id="err-email"></span>
+                </td>
+            </tr>
+            <tr>
+                <td>Jurusan</td>
+                <td>
+                    <select name="jurusan" id="jurusan">
+                        <option>Bisnis Digital</option>
+                        <option>Sistem Informasi</option>
+                        <option>Teknik Elektro</option>
+                        <option>Teknik Mesin</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <input type="submit" value="Kirim">
+                    <input type="reset" value="Batal">
+                </td>
+            </tr>
+        </table>
+    </form>
+
+    <script>
+        var form = document.getElementById("formReg");
+
+        function setPesan(id, teks) {
+            document.getElementById("err-" + id).textContent = teks;
+        }
+
+        function wajibIsi(id, label) {
+            var nilai = document.getElementById(id).value.trim();
+            if (nilai === "") {
+                setPesan(id, label + " harus diisi!");
+                return false;
+            }
+            setPesan(id, "");
+            return true;
+        }
+
+        form.addEventListener("submit", function (e) {
+            e.preventDefault();
+            var valid = true;
+
+            if (!wajibIsi("nama", "Nama")) valid = false;
+            if (!wajibIsi("alamat", "Alamat")) valid = false;
+            if (!wajibIsi("tgl", "Tanggal lahir")) valid = false;
+            if (!wajibIsi("telp", "No. telepon")) valid = false;
+
+            var telp = document.getElementById("telp").value.trim();
+            if (telp !== "" && !/^[0-9+\-\s]{8,15}$/.test(telp)) {
+                setPesan("telp", "Format telepon salah (hanya angka, 8-15 digit)!");
+                valid = false;
+            }
+
+            var url = document.getElementById("url").value.trim();
+            var polaUrl = /^(https?:\/\/)([\w-]+\.)+[a-z]{2,}(\/\S*)?$/i;
+            if (url === "") {
+                setPesan("url", "URL harus diisi!");
+                valid = false;
+            } else if (!polaUrl.test(url)) {
+                setPesan("url", "Format URL salah! Contoh: https://www.contoh.com");
+                valid = false;
+            } else {
+                setPesan("url", "");
+            }
+
+            var email = document.getElementById("email").value.trim();
+            var polaEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (email === "") {
+                setPesan("email", "Email harus diisi!");
+                valid = false;
+            } else if (!polaEmail.test(email)) {
+                setPesan("email", "Format email salah! Contoh: nama@contoh.com");
+                valid = false;
+            } else {
+                setPesan("email", "");
+            }
+
+            if (valid) {
+                alert("Data berhasil dikirim!");
+            }
+        });
+
+        form.addEventListener("reset", function () {
+            var pesan = document.querySelectorAll(".pesan");
+            for (var i = 0; i < pesan.length; i++) pesan[i].textContent = "";
+        });
+    </script>
+</body>
+</html>

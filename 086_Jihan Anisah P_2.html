@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Tugas Besar 1</title>
+    <style>
+        body { margin: 0; font-family: Arial, sans-serif; font-size: 12px; background: #fff; }
+        table.layout { width: 100%; border-collapse: collapse; }
+        td { vertical-align: top; }
+
+        td.header {
+            background: #5b7be8;
+            height: 90px;
+            text-align: center;
+            vertical-align: middle;
+            font-weight: bold;
+            font-size: 14px;
+        }
+        td.menu {
+            background: #66dd00;
+            text-align: center;
+            font-weight: bold;
+            font-size: 10px;
+            padding: 5px;
+            border: 1px solid #5ab800;
+        }
+        td.menu a { color: #000; text-decoration: none; }
+        td.menu a:hover { text-decoration: underline; }
+
+        td.isi {
+            background: #ffff66;
+            padding: 12px;
+            border: 1px solid #c8c800;
+        }
+        td.logo { text-align: center; }
+        td.isi h4 { margin: 8px 0 4px; font-size: 11px; }
+        td.isi p { margin: 4px 0; font-size: 10px; }
+        td.isi ul { margin: 4px 0; padding-left: 22px; font-size: 10px; }
+        td.isi a { color: #0000cc; }
+
+        td.footer {
+            background: #eeeeee;
+            text-align: center;
+            font-size: 9px;
+            padding: 10px;
+            border: 1px solid #999;
+        }
+    </style>
+</head>
+<body>
+    <table class="layout">
+        <!-- HEADER -->
+        <tr>
+            <td class="header" colspan="4">HEADER</td>
+        </tr>
+
+        <!-- MENU -->
+        <tr>
+            <td class="menu" width="20%"><a href="#">HOME</a></td>
+            <td class="menu" width="40%"><a href="#">PROFILE</a></td>
+            <td class="menu" width="20%"><a href="#">GALERI</a></td>
+            <td class="menu" width="20%"><a href="#">CONTACT</a></td>
+        </tr>
+
+        <!-- ISI -->
+        <tr>
+          <!-- Kolom 1: Logo -->
+            <td class="isi logo">
+                <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b6/Logo_graph_umsida_FC.jpg/960px-Logo_graph_umsida_FC.jpg?utm_source=id.wikipedia.org&utm_campaign=index&utm_content=thumbnail" alt="Logo" width="60">
+            </td>
+
+            <!-- Kolom 2: Konten utama -->
+            <td class="isi">
+                <h4>Selamat datang di website sederhana saya.</h4>
+                <p>Website ini dibuat sebagai contoh layout menggunakan tabel HTML.</p>
+
+                <h4>Program Studi</h4>
+                <p>Selamat datang di halaman utama website. Silakan pilih menu yang tersedia untuk melihat informasi lainnya.</p>
+                <ul>
+                    <li><a href="#">Profil Kampus</a></li>
+                    <li><a href="#">Informasi Akademik dan Kemahasiswaan</a></li>
+                    <li><a href="#">Jadwal Perkuliahan</a></li>
+                    <li><a href="#">Pengumuman</a></li>
+                    <li><a href="#">Kegiatan Mahasiswa</a></li>
+                    <li><a href="#">Data Dosen</a></li>
+                    <li><a href="#">Kontak</a></li>
+                </ul>
+
+                <h4>Program Pendidikan</h4>
+                <p>Beberapa program pendidikan yang tersedia:</p>
+                <ul>
+                    <li>Program Diploma</li>
+                    <li>Program Pendidikan Sarjana</li>
+                </ul>
+            </td>
+
+            <!-- Kolom 3: Kosong -->
+            <td class="isi">&nbsp;</td>
+
+            <!-- Kolom 4: Link -->
+            <td class="isi">
+                <h4>Link</h4>
+                <ul>
+                    <li><a href="#">Menu Utama</a></li>
+                    <li><a href="#">Data Akademik</a></li>
+                </ul>
+            </td>
+        </tr>
+
+        <!-- FOOTER -->
+        <tr>
+            <td class="footer" colspan="4">
+                COPYRIGHT &copy; 2026 NAMA MAHASISWA<br>
+                Tugas Besar 1 - Desain Web
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

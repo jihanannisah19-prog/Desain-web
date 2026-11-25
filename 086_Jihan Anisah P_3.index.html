@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout Tugas - UMSIDA</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Times New Roman", Times, serif;
+            background-color: #ffffff;
+        }
+
+        #wrapper {
+            width: 960px;
+            margin: 0 auto;
+        }
+
+        /* HEADER */
+        #header {
+            height: 180px;
+            background-color: #5b7fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #header h1 {
+            font-size: 16px;
+            font-weight: bold;
+            color: #000000;
+        }
+
+        /* MENU */
+        #menu {
+            background-color: #99ff00;
+            height: 34px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        #menu a {
+            color: #000000;
+            font-size: 13px;
+            font-weight: bold;
+            text-decoration: underline;
+            text-transform: uppercase;
+        }
+
+        /* ISI (3 kolom) */
+        #isi {
+            display: flex;
+            background-color: #ffff66;
+            padding: 6px 0;
+        }
+
+        #kiri {
+            width: 150px;
+            padding: 4px 10px;
+        }
+
+        #kiri img {
+            width: 130px;
+            height: 130px;
+            background-color: #ffffff;
+            display: block;
+        }
+
+        #tengah {
+            width: 560px;
+            padding: 4px 10px;
+            font-size: 12px;
+            line-height: 1.5;
+        }
+
+        #tengah h3 {
+            font-size: 13px;
+            margin: 10px 0 6px 0;
+        }
+
+        #tengah p {
+            margin-bottom: 8px;
+        }
+
+        #tengah ul {
+            margin: 4px 0 10px 30px;
+        }
+
+        #tengah li {
+            font-size: 12px;
+        }
+
+        #tengah a {
+            color: #0000ee;
+        }
+
+        #kanan {
+            width: 250px;
+            padding: 20px 10px;
+            font-size: 12px;
+        }
+
+        #kanan h3 {
+            font-size: 13px;
+            margin-bottom: 6px;
+        }
+
+        #kanan ul {
+            margin-left: 20px;
+            line-height: 2;
+        }
+
+        #kanan a {
+            color: #0000ee;
+            font-weight: bold;
+        }
+
+        /* FOOTER */
+        #footer {
+            background-color: #d9d9d9;
+            height: 70px;
+            text-align: center;
+            font-size: 11px;
+            font-style: italic;
+            padding-top: 10px;
+            line-height: 2.2;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="wrapper">
+
+        <!-- HEADER -->
+        <div id="header">
+            <h1>HEADER</h1>
+        </div>
+
+        <!-- MENU -->
+        <div id="menu">
+            <a href="#">Home</a>
+            <a href="#">Profil</a>
+            <a href="#">Galeri</a>
+            <a href="#">Content</a>
+        </div>
+
+        <!-- ISI -->
+        <div id="isi">
+
+            <div id="kiri">
+                <!-- Simpan gambar logo bernama logo.png di folder yang sama -->
+                <img src=https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b6/Logo_graph_umsida_FC.jpg/960px-Logo_graph_umsida_FC.jpg?utm_source=id.wikipedia.org&utm_campaign=index&utm_content=thumbnail" alt="Logo UMSIDA">
+            </div>
+
+            <div id="tengah">
+                <p>Sampai saat ini Universitas Muhammadiyah Sidoarjo telah memiliki fakultas-fakultas dan program studi, yakni:</p>
+
+                <h3>Program Sarjana</h3>
+                <p>Universitas Muhammadiyah Sidoarjo terdiri dari 8 Fakultas, antara lain :</p>
+                <ul>
+                    <li><a href="#">Fakultas Tarbiyah</a></li>
+                    <li><a href="#">Fakultas Keguruan dan Ilmu Pendidikan</a></li>
+                    <li><a href="#">Fakultas Pertanian</a></li>
+                    <li><a href="#">Fakultas Ekonomi</a></li>
+                    <li><a href="#">Fakultas IMIPOL</a></li>
+                    <li><a href="#">Fakultas Teknik</a></li>
+                    <li><a href="#">Fakultas Psikologi</a></li>
+                    <li>Fakultas Hukum</li>
+                </ul>
+
+                <h3><a href="#">Program Magister (S2)</a></h3>
+                <p>Universitas Muhammadiyah Sidoarjo memiliki 2 Program Pasca Sarjana :</p>
+                <ul>
+                    <li>Magister Manajemen</li>
+                    <li>Magister Pendidikan Islam</li>
+                </ul>
+            </div>
+
+            <div id="kanan">
+                <h3>Link</h3>
+                <ul>
+                    <li><a href="#">Maps UMSIDA</a></li>
+                    <li><a href="#">Radio UMSIDA</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+        <!-- FOOTER -->
+        <div id="footer">
+            <strong>COPYRIGHT &copy; 2026-2027 PEMROGRAMAN WEB UMSIDA. ALL RIGHT RESERVED</strong><br>
+            Thema by : Jihan Anisah Pratiwi
+        </div>
+
+    </div>
+
+</body>
+</html>
